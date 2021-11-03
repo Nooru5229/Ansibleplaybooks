@@ -1,0 +1,11 @@
+---
+- name: this is to create a dir
+  hosts: all
+  become: yes
+  tasks: 
+  
+  - name: this to create a dir    
+    file:
+     path: /home/ansadmin/dir1
+     state: directory
+

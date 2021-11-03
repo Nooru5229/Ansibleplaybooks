@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.9.148
+  become: true
+  tasks: 
+          
+  - service:
+      name: httpd
+      state: started
+

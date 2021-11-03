@@ -1,0 +1,9 @@
+--- 
+  hosts: all
+  become: yes
+  tasks:
+   
+  - name: to delete a dir
+      file:
+         path: /home/ansadmin/this to create a dir
+         state: absent

@@ -1,0 +1,9 @@
+---
+- name: this is to create a second file
+  hosts: all
+  become: yes
+  tasks:
+  - name: this is to create a file
+    file:
+      path: /home/ansadmin/file10 
+      state: touch

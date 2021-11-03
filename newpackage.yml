@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - file:
+      path: /home/ansadmin/test
+      state: touch
+
